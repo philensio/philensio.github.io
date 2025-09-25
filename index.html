@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Firestick</title>
+    <title>Time Zone Selector</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a web app running on a Fire TV device.</p>
+
+    <div class="timezone-container">
+        <div class="header">
+            <h1>Select Your Time Zone</h1>
+            <p>Your local time zone has been pre-selected for your convenience.</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="timezone-select">Choose a time zone:</label>
+            <select id="timezone-select" name="timezone"></select>
+        </div>
+
+        <div class="result-box">
+            <p>You have selected: <span id="selected-timezone-display"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
